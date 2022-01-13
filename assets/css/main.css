@@ -1,0 +1,728 @@
+/* ================
+Top header design
+================= */
+.top_header {
+    background-color: var(--primarycolor);
+    height: 40px;
+    display: none;
+    align-items: center;
+}
+.top_header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top_header_info {
+    display: flex;
+    align-items: center;
+}
+.top_header_info, .top_header_link{
+    width: 50%;
+}
+.top_header_link{
+    text-align: right;
+}
+.top_header_info_service {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+.top_header_info_contact {
+    margin-left: 60px;
+}
+.top_header_info_contact a, .join_link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* ================
+Top header design
+================= */
+
+
+/* ================
+main header design
+================= */
+.main_header {
+   padding: 25px 0px;
+}
+.main_header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.main_header_logo {
+    width: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo {
+    color: var(--primarycolor);
+    font-size: 20px;
+    font-weight: 500;
+}
+.mobile_nav {
+    display: block;
+}
+.mobile_nav ul li {
+    width: 25px;
+    height: 1.5px;
+    background-color: var(--secondarycolor);
+    margin-bottom: 5px;
+}
+.mobile_nav ul li:nth-child(3){
+    margin-bottom: 0px;
+}
+.header_right_column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input_control {
+    height: 36px;
+    width: calc(100% - 97px);
+    padding-left: 32px;
+    border: 1px solid rgba(0, 57, 83, .5);
+    outline: none;
+    border-radius: 3px;
+    color: var(--primarycolor);
+    font-size: 14px;
+}
+.search_column {
+    width: 100%;
+    margin-top: 20px;
+}
+.search_column_wrapper {
+    position: relative;
+}
+.search_inner {
+    position: relative;
+    display: block;
+}
+.search_icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 14px;
+    height: 100%;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.search_btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100px;
+    background: var(--secondarycolor);
+    color: rgb(255 255 255 / 90%);
+    outline: none;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.search_icon i{
+    color: rgba(0, 57, 83, .5);
+}
+.main_header_card_colamun {
+    position: absolute;
+    top: -4px;
+    right: 0px;
+    order: -1;
+}
+.main_header_card {
+    background: none;
+    color: var(--secondarycolor);
+    padding: 7px 20px;
+    font-size: 14px;
+    display: block;
+    font-weight: 600;
+    transition: all 0.3s linear;
+    border-radius: 3px;
+    border: 2px solid rgba(0, 57, 83, .5);
+}
+.main_header_card:hover{
+    color: white;
+    background-color: var(--primarycolor);
+}
+/* ================
+main header design
+================= */
+
+
+/* ================
+nav header design
+================= */
+.nav_header {
+    background: rgba(0, 57, 83, .05);
+    padding: 10px 0;
+    display: none;
+}
+.nav_header_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_header_menu{}
+.nav_header_menu ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav_header_menu ul li:not(:last-child){
+    margin-right: 25px;
+}
+.nav_header_menu ul li a, .nav_header_register a {
+    text-transform: capitalize;
+    color: rgba(0, 57, 83, 1);
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all linear 0.5s;
+}
+.nav_header_menu ul li a:hover, .nav_header_register a:hover{
+    color: var(--primarycolor);
+}
+
+/* ================
+nav header design
+================= */
+
+/* ================
+strat bennar section 
+================= */
+
+.bennar_sction {
+    background: url(../image/image-3.webp) center center;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+}
+
+/* ================
+End bennar section 
+================= */
+
+
+/* ======================
+populer catogory section
+======================== */
+
+.populer_category_section {
+    padding: 50px 0px;
+}
+.populer_category_wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+.category_item_image {
+    min-height: 250px;
+    background: rgba(0, 57, 83, .05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category_item_image img{
+    max-width: 200px;
+    width:100%;
+}
+.category_image_title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--secondarycolor);
+}
+/* ======================
+populer catogory section
+======================== */
+
+
+/* ======================
+   new catogory section
+======================== */
+
+.new_catagory_section{
+    padding: 40px 0;
+}
+.new_category_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 15px;
+}
+.new_category_image {
+    margin-top: 20px;
+}
+.new_category_image img{
+    width: 100%;
+}
+.new_category_info {
+    text-align: center;
+    margin-top: 20px;
+}
+.new_category_info_name {
+    color: var(--secondarycolor);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 23px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.new_category_info_title {
+    color: var(--secondarycolor);
+    font-size: 14px;
+    line-height: 23px;
+    margin: 5px 0px;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.new_category_info_link {
+    font-size: 15px;
+    line-height: 23px;
+    color: var(--secondarycolor);
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+/* ======================
+   new catogory section
+======================== */
+
+
+/* ======================
+   new aribal item
+======================== */
+.new_arival_item{
+    width: 100%;
+}
+.new_aival_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1 ,1fr);
+    grid-row-gap: 40px;
+}
+.new_arival_shop_image {
+    height: 414px;
+}
+.new_arival_shop_image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.new_arival_shop_info {
+    color: var(--secondarycolor);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.new_arival_image {
+    min-height: 414px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 57, 83, .05);
+}
+.new_arival_image img {
+    width: 200px;
+}
+img.ar3_img {
+    height: 362px;
+}
+.new_arival_info {
+    margin: 20px 10px 10px 10px;
+}
+.new_arival_info_wishlist {
+    color: rgb(0 57 81 / 40%);
+    font-size: 18px;
+}
+.new_arval_info_name {
+    color: var(--secondarycolor);
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    margin: 5px 0;
+}
+p.shop_arival_price {
+    color: var(--secondarycolor);
+    font-size: 16px;
+}
+/* ======================
+   new aival item
+======================== */
+
+
+/* ======================
+   zampos shoes running
+======================== */
+.zampos_shoes_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+.zampos_shoes_descreption {
+    width: 300px;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+.zampos_shoes_title {
+    color: var(--secondarycolor);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+}
+.zampos_shoes_subtitle {
+    color: var(--secodarycolor);
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.zampos_shoes_image {
+    width: 100%;
+} 
+.zampos_shoes_image img{
+    width: 100%;
+}
+
+/* ======================
+   zampos shoes running
+======================== */
+
+
+/* ======================
+   populer item section
+======================== */
+.populer_item_content {
+    margin-top: 30px;
+}
+.populer_item_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 10px;
+}
+.populer_single_item_image {
+    min-height: 250px;
+    width: 100%;
+}
+.populer_single_item_image {
+    height: 250px;
+    width: 100%;
+    background: rgba(0, 57, 83, .05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.populer_single_item_image img{
+    max-width: 200px;
+    width: 100%;
+}
+.populer_single_item_descreption {
+    padding: 20px 10px 10px 10px;
+    transition: all linear 0.5s !important;
+}
+.populer_item_descreption_link {
+    color: rgb(0 57 83 / 70%);
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.populer_item_descreption_link:hover{
+    text-decoration: underline;
+    color: var(--primarycolor);
+}
+.populer_item_descreption_link span {
+    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.populer_item_descreption_price {
+    color: var(--secondarycolor);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+/* ======================
+   populer item section
+======================== */
+
+/* ======================
+   jeans style section
+======================== */
+.jeans_style_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+}
+.jeans_style_descreptino {
+    text-align: center;
+    padding-top: 20px;
+}
+.jeans_style_descreption_title {
+    color: var(--secondarycolor);
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.jeans_style_descreption_text {
+    /* color: var(--secondarycolor); */
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.jeans_sryle_image{}
+.jeans_sryle_image img{
+    width: 100%;
+    display: block;
+}
+/* ======================
+   jeans style section
+======================== */
+
+/* ======================
+    Trending Brands section
+======================== */
+
+.brand_single_item {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px;
+}
+.trending_brands_content{
+    margin-top: 20px;
+}
+.brand_single_item_image {
+    height: 250px;
+    background: rgba(0, 57, 83, .05);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand_single_item_image img{
+    max-width: 200px;
+}
+/* ======================
+   Trending Brands section
+======================== */
+
+/* ======================
+   Dansko fall section
+======================== */
+.dansko_fall_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.dansko_fall_pruduct {
+    margin-top: 20px;
+}
+.danskofall_bennar_image img {
+    width: 100%;
+    display: block;
+}
+.dansko_fall_item_rating ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.dansko_fall_item_rating ul li:not( :last-child ){
+    margin-right: 10px;
+}
+.dansko_fall_item_rating ul li i {
+    color: gold;
+    font-size: 16px;
+}
+/* ======================
+   Dansko fall section
+======================== */
+
+
+/* ======================
+   footer menu section
+======================== */
+
+.footer_menu_section{
+   
+}
+.news_letter_section {
+    background-color: #032c48;
+    padding: 50px 0px;
+}
+.news_letter_heading {
+    color: white;
+    font-size: 17px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.label_title {
+    display: block;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.input_footer {
+    background-color: white;
+    border: 2px solid white;
+    width: 100%;
+}
+
+.signin_up_image {
+    background-image: url(../image/melody-sprite.2021.09.16._TTH_.svg);
+    height: 18px;
+    width: 18px;
+    background-position: -340px -228px;
+    display: inline-block;
+    margin-right: 6px;
+    vertical-align: revert;
+}
+.singin_up_btn {
+    display: block;
+    color: white;
+    margin-top: 30px;
+    border: 2px solid white !important;
+    padding: 10px 20px;
+    font-size: 15px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    border-radius: 3px;
+}
+.singin_up_btn:hover{
+   background-color: white;
+   color: #032c48;
+
+}
+
+/* ======================
+   footer menu section
+======================== */
+
+
+/* ======================
+   main footer menu section
+======================== */
+
+.main_footer_menu{
+    background-color: #003953;
+    color: white;
+    padding: 50px 0px;
+}
+.footer_link_title {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer_menu_link {
+    margin-bottom: 40px;
+}
+.footer_menu_link_tag{}
+.footer_menu_link_tag li{
+    margin-bottom: 10px;
+}
+.footer_menu_link_tag li a {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.footer_menu_link_tag li a:hover{
+    text-decoration: underline;
+}
+.voice_metter{
+    background-color: #144860;
+    padding: 16px;
+}
+.voice_metter_text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.survey_btn {
+    background-position: -320px -228px;
+}
+
+/* ======================
+   main footer menu section
+======================== */
+
+/* ======================
+   social footer menu section
+======================== */
+
+.contact_with_socila{
+    background-color: #003953;
+    padding-bottom: 50px;
+}
+.contact_with_social_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 50px;
+    border-top: 1px solid white;
+}
+.contact_title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact_social_icon {
+    padding-top: 20px;
+}
+.contact_social_icon ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contact_social_icon ul li:not(:last-child){
+    margin-right: 20px;
+}
+.contact_social_icon ul li i{
+    color: white;
+    font: 16px;
+    height: 40px;
+    width: 40px;
+    background-color: #144860;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======================
+   social footer menu section
+======================== */

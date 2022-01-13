@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    max-width: 1460px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+:root{
+    --primarycolor:#0076bd;
+    --secondarycolor:#003953;
+
+}
+.title p {
+    color: var(--secondarycolor);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.section_padding{
+    padding: 50px 0px;
+}
+.btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+.zampos_shoes_btn {
+    border: 2px solid var(--secondarycolor);
+    padding: 10px 20px;
+    border-radius: 3px;
+    transition: all 0.5s;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+}
+.zampos_shoes_btn:hover{
+    background-color: var(--secondarycolor);
+    color: #fff;
+}
+.mt10{
+    margin: 20px 0;
+}
+
+/* ====================
+slick slider custom code
+===================== */
+.slick-dots li button:before {
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background: var(--secondarycolor);
+}
+.slick-dots {
+    bottom: -50px;
+}
+/* ====================
+slick slider custom code
+===================== */

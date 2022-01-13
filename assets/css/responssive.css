@@ -1,0 +1,153 @@
+@media(min-width:575px){
+    .new_aival_wrapper {
+        grid-template-columns: repeat(2 ,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 10px;
+    }
+    .dansko_fall_pruduct {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+    }
+    .populer_item_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }
+    .main_footer_menu_wrapper {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    }
+    .surbey_button{
+        max-width: 300px;
+        width: 100% !important;
+    }
+}
+
+
+@media(min-width: 768px){
+    .new_category_wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .zampos_shoes_wrapper {
+        flex-direction: row;
+    }
+
+    .zampos_shoes_descreption {
+        text-align: left;
+        margin: 0px;
+    }
+    .zampos_shoes_image {
+        width: calc(100% - 330px);
+    }
+    .populer_item_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+        grid-column-gap: 30px;
+    }
+    .populer_single_item_image img {
+        width: 200px;
+    }
+    .dansko_fall_pruduct {
+       grid-template-columns: repeat(3, 1fr);   
+    }
+    .news_letter_from {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .news_letter_from_input {
+        margin-right: 20px;
+    }
+    .singin_up_btn,
+    .input_footer {
+       width: 300px;
+     }
+}
+
+
+@media(min-width: 991px){
+    .top_header {
+        display: flex;
+    }
+    .search_column {
+        max-width: 595px;
+        width: 100%;
+        margin: 0px;
+    }
+    .main_header_logo {
+        width: 220px;
+    }
+    .header_logo {
+        font-size: 30px;
+    }
+    .mobile_nav {
+        display: none;
+    }
+    .header_right_column {
+        width: calc(100% - 220px);
+    }
+    .main_header_card_colamun {
+        position: unset;
+        order: 1;
+    }
+    .nav_header {
+        display: block;
+    }
+    .bennar_sction {
+        height: 500px;
+    }
+    .populer_category_wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .new_category_image {
+        margin-top: 0px;
+    }
+    .new_category_wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .new_aival_wrapper {
+        grid-template-columns: repeat(4 ,1fr);
+        grid-column-gap: 30px;
+    }
+    .populer_item_wrapper {
+        grid-template-columns: repeat(6, 1fr);
+        grid-column-gap: 30px;
+    }
+    .populer_single_item_image img {
+        max-width: 200px;
+        width: 100%;
+    }
+    .jeans_style_wrapper {
+        flex-flow: row;
+    }
+    .jeans_sryle_image {
+        width: calc(100% - 520px);
+    }
+    .jeans_style_descreptino {
+        width: 480px;
+        text-align: left;
+        padding-top: 0px;
+    }
+    .dansko_fall_wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .dansko_fall_pruduct {
+        grid-template-columns: repeat(3, 1fr);
+        width: calc(100% - 480px);
+        margin-top: 20px;
+    }
+    .danskofall_bennar {
+        width: 450px;
+    }
+}
+@media(min-width: 1140px){
+    .dansko_fall_pruduct {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
